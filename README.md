@@ -50,7 +50,8 @@ How It Works
 ---
 
 🧠 File Explanations
-=> background.js
+
+💬 background.js
 
 Listens for the popup command (runAutomation).
 
@@ -60,7 +61,7 @@ Injects content.js into the feed page.
 
 Sends user inputs (like/comment counts) to the content script.
 
-=> content.js
+💬 content.js
 
 Handles all automation logic.
 
@@ -70,8 +71,11 @@ Clicks, types, and scrolls in a controlled sequence.
 
 Logs progress in the console for debugging.
 
-=> popup.js
+💬 popup.js
 
 Takes user inputs (how many likes/comments).
+
+Sends them to background.js when the Run button is clicked.
+
 
 Sends them to background.js when the Run button is clicked.
